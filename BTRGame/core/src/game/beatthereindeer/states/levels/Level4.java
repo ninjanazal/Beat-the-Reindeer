@@ -344,7 +344,7 @@ public class Level4 extends State {
         sb.end();
 
         //DEBUG
-        debugRender();
+        //debugRender();
 
     }
 

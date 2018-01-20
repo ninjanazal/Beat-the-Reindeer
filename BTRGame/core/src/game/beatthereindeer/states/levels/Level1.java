@@ -67,6 +67,10 @@ public class Level1 extends State {
     private boolean isShowing;
     private boolean isPlaying;
 
+    //DEBUG
+    ShapeRenderer shapeRenderer;
+
+
     public Level1(GameStateManager gsm) {
         super(gsm);
 
@@ -125,6 +129,9 @@ public class Level1 extends State {
 
         // Buttons
         controls = new Controls(cameraRect);
+
+        //DEBUG
+        shapeRenderer = new ShapeRenderer();
     }
 
     @Override
@@ -338,7 +345,7 @@ public class Level1 extends State {
         sb.end();
 
         //DEBUG
-        debugRender();
+        //debugRender();
 
     }
 
@@ -483,7 +490,6 @@ public class Level1 extends State {
     }
 
     private void debugRender() {
-        ShapeRenderer shapeRenderer = new ShapeRenderer();
         shapeRenderer.setProjectionMatrix(camera.combined);
 
         shapeRenderer.begin(ShapeRenderer.ShapeType.Line);

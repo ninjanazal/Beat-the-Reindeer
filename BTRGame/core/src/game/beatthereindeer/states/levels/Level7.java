@@ -346,7 +346,7 @@ public class Level7 extends State {
         sb.end();
 
         //DEBUG
-        debugRender();
+        //debugRender();
     }
 
     @Override
